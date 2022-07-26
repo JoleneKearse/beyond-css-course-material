@@ -1,3 +1,9 @@
+$clr-white: #f8f7f7;
+$clr-black: #201e1f;
+$clr-shadow: #201e1f99;
+$clr-accent: #da3f0b;
+$clr-accent-shadow: #da3f0b33;
+
 * {
   box-sizing: border-box;
   margin: 0;
@@ -19,12 +25,47 @@ body {
   gap: 0.75em;
   width: min(90%, 60rem);
   padding: 2em;
+  box-shadow: 2px 2px 25px 5px $clr-shadow;
+
+  &__title {
+    color: $clr-accent;
+  }
 }
 
 .btn {
   display: inline-block;
   padding: 0.5em 1.5em;
   text-decoration: none;
+  color: $clr-white;
+
+  &:focus,
+  &:hover {
+    outline: .1rem solid $clr-accent;
+    background-color: $clr-black;
+    box-shadow: 2px 4px 10px 1px $clr-accent-shadow;
+  }
+
+
+
+  &--primary {
+    background-color: $clr-accent;
+
+    &:hover,
+    &:focus {
+      box-shadow: 2px 4px 10px 1px $clr-accent;
+    }
+  }
+
+  &--outline {
+    color: $clr-accent;
+    border: .1rem solid $clr-accent;
+
+    &:hover,
+    &:focus {
+      color: $clr-white;
+      box-shadow: 2px 4px 10px 1px $clr-accent;
+    }
+  }
 }
 
 .flex-group {

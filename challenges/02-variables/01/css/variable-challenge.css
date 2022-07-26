@@ -1,0 +1,58 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+}
+
+body {
+  font-size: 1.75rem;
+  font-family: system-ui, sans-serif;
+  line-height: 1.6;
+  /* this is being used to center the content on the screen */
+  display: grid;
+  height: 100vh;
+  place-items: center;
+}
+
+.card {
+  display: grid;
+  gap: 0.75em;
+  width: min(90%, 60rem);
+  padding: 2em;
+  box-shadow: 2px 2px 25px 5px rgba(32, 30, 31, 0.6);
+}
+.card__title {
+  color: #da3f0b;
+}
+
+.btn {
+  display: inline-block;
+  padding: 0.5em 1.5em;
+  text-decoration: none;
+  color: #f8f7f7;
+}
+.btn:focus, .btn:hover {
+  outline: 0.1rem solid #da3f0b;
+  background-color: #201e1f;
+  box-shadow: 2px 4px 10px 1px rgba(218, 63, 11, 0.2);
+}
+.btn--primary {
+  background-color: #da3f0b;
+}
+.btn--primary:hover, .btn--primary:focus {
+  box-shadow: 2px 4px 10px 1px #da3f0b;
+}
+.btn--outline {
+  color: #da3f0b;
+  border: 0.1rem solid #da3f0b;
+}
+.btn--outline:hover, .btn--outline:focus {
+  color: #f8f7f7;
+  box-shadow: 2px 4px 10px 1px #da3f0b;
+}
+
+.flex-group {
+  display: flex;
+  gap: 1rem;
+}
+
+/*# sourceMappingURL=variable-challenge.css.map */
